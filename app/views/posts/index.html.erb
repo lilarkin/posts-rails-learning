@@ -1,0 +1,23 @@
+<h1>All Posts</h1>
+
+<ul>
+  <% @posts.each do |post| %>
+
+    <li> 
+      <%= link_to post.title, post_show_path(post) %> 
+    </li>
+
+  <% end %>
+</ul>
+
+<%= link_to 'New Post', post_path %>
+
+<!-- <a href='/post'>New Post</a> -->
+
+<!-- Echoing ERB Tag -->
+<!-- printing out variable values -->
+<%= %>
+
+<!-- Non Echoing ERB Tag -->
+<!-- looping, conditionals, setting variables -->
+<% %>

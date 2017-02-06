@@ -1,0 +1,32 @@
+<h1>Creat a New Post</h1>
+
+<%= form_for @post do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <br />
+  
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <br />
+
+  <% f.label :body %>
+  <%= f.text_area :body %>
+
+  <br />
+
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Home', root_path %>
+<!-- <a href'/'>Home</a> -->
+<!-- 
+  <form method='POST' action='/posts'>
+  <label>Title</label>
+  <input type='text' name='post[name]' />
+
+  <label>Author</label>
+  <input type='text'>
+  </form>
+-->
